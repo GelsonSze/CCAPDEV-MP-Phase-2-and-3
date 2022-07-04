@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/gamebrowser.js"></script>
+  </head>
+  <body id="top">
+    {{> header}}
+
+    <div>
+      <p id="section_title">Browse</p>
+    </div>
+
+    <div id="filter">
+      <input type="text" placeholder="Search Games" name="search" />
+      <ul>
+        <p>Genre:</p>
+        <button name="All">All</button>
+        <button name="Action">Action</button>
+        <button name="Adventure">Adventure</button>
+        <button name="MMORPG">MMORPG</button>
+        <button name="MOBA">MOBA</button>
+        <button name="Platformer">Platformer</button>
+        <button name="RPG">RPG</button>
+        <button name="Shooters">Shooters</button>
+        <button name="Others">Others</button>
+      </ul>
+    </div>
+
+    <div id="games">
+      <div id="addgame">
+        <a href="/gameinput">
+            <img src="/images/Home_Images/addgame.png" alt="add game"/>
+        </a>
+      </div>
+      {{#each gamepage}}
+        {{> gameslist this}}
+      {{/each}}
+    </div>
+  </body>
+</html>

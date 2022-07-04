@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #485461;
+  background-image: url("/images/Home_Images/bg4.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-position: top;
+  height: 750px;
+}
+main {
+  max-width: 1000px;
+  min-height: 0px;
+  margin: 0% auto;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  border: double #0d1b2a;
+}
+header {
+  padding: 20px;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  border: double #778da9;
+  height: 500px;
+}
+.insidepic {
+  margin: 50px;
+  float: left;
+}
+.insidetxt {
+  position: absolute;
+  margin-left: 310px;
+  color: #ffffff;
+}
+h2 {
+  display: inline;
+  color: #ffffff;
+  font-size: 34px;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+button, .button, input[type="submit"] {
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 50px;
+  cursor: pointer;
+  background: linear-gradient(311deg, green, #2bae32);
+  border-radius: 10px;
+}
+button:hover {
+  background: linear-gradient(green, #2bae32);
+}
+.button {
+  margin-left: 550px;
+  margin-top: 50px;
+  background: linear-gradient(311deg, rgb(114, 5, 5), rgb(188, 47, 47));
+}
+.button:hover {
+  background: linear-gradient(311deg, rgb(188, 47, 47), rgb(114, 5, 5));
+}
+input#file {
+  display: none;
+}
+input#file + label {
+  background-color: #2bae32;
+  color: white;
+  padding: 10px 45px;
+  margin: 8px 0;
+  border: solid black;
+  border-radius: 50px;
+  cursor: pointer;
+}
+input#file + label:hover {
+  background-color: green;
+}
+#dp {
+  width: 200px;
+  height: 200px;
+  border: 8px solid black;
+  object-fit: cover;
+}
+#edit {
+  display: inline;
+  width: 80px;
+  height: 80px;
+  border: 2px solid black;
+  object-fit: cover;
+  margin: 20px;
+}
+
+input[type="text"] , input[type="password"], input[type="email"]{
+  width: 300%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 4px solid #ccc;
+  box-sizing: border-box;
+}
+
+#delete{
+  margin-top: 580px;
+  margin-left: -10px;
+  background: linear-gradient(311deg, purple, rgb(76, 3, 76));
+}
+#delete:hover{
+  background: linear-gradient(311deg, rgb(76, 3, 76), purple);
+}
+input:disabled{
+  background:rgb(223, 222, 222);
+  border: 4px solid green;
+}
+
+

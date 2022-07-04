@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/images/Home_Images/bg4.png") fixed;
+}
+
+#gameslist {
+  margin: 0px 200px 0px 200px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: 300px;
+  padding: 10px;
+  gap: 10px;
+}
+
+#gamesearchdiv {
+  color: #33dada;
+  text-shadow: 0.07em 0 black,
+  0 0.07em black,
+  -0.07em 0 black,
+  0 -0.07em black;
+  margin:30px 0px 0px 220px;
+  padding: 10px;
+}
+
+#gamesearch {
+  padding: 8px;
+  width: 300px;
+}
+
+.gamebutton{
+  position: absolute;
+  z-index: 1;
+  display: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 70px;
+  color: rgb(235, 235, 235);
+  border: solid black 1px;
+  opacity: 0.6;
+}
+
+.gamebutton:hover{
+  opacity: 1;
+}
+
+#fav{
+  top: 5px;
+  left: 5px;
+  height: 25px;
+  width: 70px;
+  background: linear-gradient(311deg, green, #2bae32);
+}
+
+#del{
+  top: 35px;
+  left: 5px;
+  height: 25px;
+  width: 70px;		
+  background: linear-gradient(311deg, rgb(128, 0, 0), #6f0604);
+}
+
+/* #store{
+  top: 55px;
+  left: 5px;	
+  background: linear-gradient(311deg, rgb(120, 6, 172), #0e006c);
+} */
+
+#gameslist div{
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: all 0.5s;
+  border: 3px solid #09cfda;
+  position: relative;
+}
+
+#sectiontitle {
+  margin-top: 100px;
+  margin-left: 30px;
+  font-size: 75px;
+  position: absolute;
+  color: #543c90;
+}
+
+#hoursplayed {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 25px;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#gameslist div:hover , .gamebutton {
+  transform: scale(1.05);
+}
+
+#gameslist div:hover .gamebutton {
+  display: block;
+}
+

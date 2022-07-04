@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/Home_Images/bg4.png");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 350px;
+    height: 400px;
+    background: #001729ed;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 5px;
+}
+
+.logo{
+    width:105px;
+    height: 105px;
+    background: #000000ed;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+
+/* login title */
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* labels */
+.main p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* input box */
+.main input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* input text */
+.main input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 0.5px solid #fff;
+    background: #000000;
+    outline: none;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+/* submit button */
+.main input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #05dde4;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px; /*rounded edges*/
+}
+
+/* button hover */
+.main input[type="button"]:hover {
+    cursor: pointer;
+    background: #944cfa;
+    color: #000;
+}
+
+/* small text w/ link */
+.main a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #05dde4;
+    text-align: center;
+}
+
+/* small text w/ link hover */
+.main a:hover{
+    font-size: 12px;
+    line-height: 20px;
+    color: #b974ff;
+    text-align: center;
+}
+
+/* small text */
+.main .sub{
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    text-align: center;
+}
+
+/* small text */
+.main .sub:hover{
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    text-align: center;
+}
+
+label{
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+  }
+
+.main input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+}
+
+.main span{
+    padding-top: 00.5px;
+    font-size: 15px;
+    color: red;
+}
