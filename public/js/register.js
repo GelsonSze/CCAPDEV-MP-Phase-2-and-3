@@ -43,26 +43,45 @@ $(document).ready(function(){
       }
    );
 
-   $('#password2').keyup(function() {
+   var error = "";
+   $('#password').keyup(function() {
       var password = $("#password").val();
-      var password2 = $("#password2").val();
-      if(password!=""){
-         if(password.length<8 && password!="" || password2.length<8 && password2!=""){
-            $('#error').text('*Minimum 8 characters*');
-            $('#npass1').css('border', '4px solid red');
-            $('#npass2').css('border', '4px solid red');
-         }else if(password!=password2){
-               $("#password2").css("background-color", "red");
-               $("#error3").text("*Password entered is not the same.*");
-               $('#signup').prop("disabled", true);
+      
+         if(password.length<8 && password!=""){
+            error = "*Password should be minimum 8 characters.*"
+            $('#error3').text(error);
+            $("#password").css("background-color", "red");
+            $('#signup').prop("disabled", true);
+         }else{
+            error ="";
+            $("#password").css("background-color", "black");
+            $('#error3').text("")
          }
-         else{
-               $("#password2").css("background-color", "black");
-               $("#error3").text("");
-               $('#signup').prop("disabled", false);     
-         }
-      }
-   });
+      });
+
+   
+   $('#password2').keyup(function() {
+               var password = $("#password").val();
+               var password2 = $("#password2").val();
+            
+
+               if(password!=password2){
+                  if(error!=""){
+                     $("#error3").text(error);
+                  }else{
+                     error ="*Password entered is not the same.*";
+                     $("#password2").css("background-color", "red");
+                     $("#error3").text(error);
+                     $('#signup').prop("disabled", true);
+                  }
+               }else{
+                     $("#password2").css("background-color", "black");
+                     $("#error3").text("");
+                     $('#signup').prop("disabled", false);     
+               }
+            
+      });
+   
 
 
 
@@ -106,41 +125,3 @@ $(document).ready(function(){
    });
 
 });
-
-
-
-
-/*
-function verifyReg(){  
-    var password1 = document.getElementById('password1').value;
-    var password2 = document.getElementById('password2').value;
-    var name = document.getElementById('name').value;
-    var username = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-
-    if(password1!=password2){
-        document.getElementById("error").innerHTML ="*Password entered is not the same.*";
-        return false;
-    }
-
-    else if(password1 == "" || password2 =="" || name == "" || username == "" || email== "" ) {  
-       document.getElementById("error").innerHTML = "*Please fill in all fields.*";  
-       return false;  
-    } 
-
-    else if(password1.length < 8) {  
-       document.getElementById("error").innerHTML = "*Password length must be at least 8 characters.*";  
-       return false;  
-    } 
-    
-    else if(password1.length > 15) {  
-       document.getElementById("error").innerHTML = "*Password length must not exceed 15 characters.*";  
-       return false;  
-
-    }else {  
-        alert("Registered successfully");
-        window.location.href ="login_page.html";
-            
-    }  
-  }  
-  */
