@@ -1,0 +1,10 @@
+<div class="pair">
+        <a href="/profile/{{user}}">
+        <p class="user">{{user}}</p>
+        </a>
+        {{#if commented}} 
+                <button class="edit" id="delete">Delete</button>
+                <button class="edit" id="edit">Edit</button>
+        {{/if}}
+        <p class="comment">{{comment}}</p>
+</div>

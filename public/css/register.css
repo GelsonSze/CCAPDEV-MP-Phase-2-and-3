@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/Home_Images/bg2.png");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* black box */
+.main{
+    width: 370px;
+    height: 500px;
+    background: #001729ed;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+/* register title */
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* labels */
+.main p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* input box */
+.main input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* input text */
+.main input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 0.5px solid #fff;
+    background: #000000;
+    outline: none;
+    height: 30px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+/* submit button */
+.main input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #05dde4;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 20px; /*rounded edges*/
+}
+
+/* button hover */
+.main input[type="button"]:hover {
+    cursor: pointer;
+    background: #944cfa;
+    color: #000;
+}
+
+/* small text w/ link */
+.main a{
+    font-size: 12px;
+    line-height: 20px;
+    color: #05dde4;
+    text-align: center;
+}
+
+/* small text w/ link hover */
+.main a:hover{
+    font-size: 12px;
+    line-height: 20px;
+    color: #b974ff;
+    text-align: center;
+}
+
+/* small text */
+.main .sub{
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    text-align: center;
+}
+
+/* small text */
+.main .sub:hover{
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    text-align: center;
+}
+
+#signup:disabled {
+    cursor: not-allowed;
+    color: #A8A8A8;
+    background-color: #E3E3E3;
+    border: 2px solid #E3E3E3;
+}
+
+span{
+    color: red;
+    font-size: 13;
+}

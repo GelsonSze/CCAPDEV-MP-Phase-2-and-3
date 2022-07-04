@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/css/editpage.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/editprofile.js"></script>
+  </head>
+  <body>
+    {{> header}}
+
+    <main>
+      <img id="edit" src="/images/Home_Images/edit.png" alt="dp" />
+      <h2>Editing Profile</h2>
+      <button type="submit" id="delete">Delete Account</button>
+      <a href="/Profile" class="button" id="back">Go Back</a>
+      <button type="submit" id="submit">Save Changes</button>
+
+      <header>
+
+        <div class="insidepic">
+          <img
+            id="dp"
+            src='../{{image}}'
+            alt="dp"
+          /><br /><br />
+          <form id="upload-form" action="/upload-image" method="post" enctype="multipart/form-data">
+            <input type="file" id="file" name="image" onchange="document.getElementById('dp').src = window.URL.createObjectURL(this.files[0])" accept="image/*"/>
+            <label for="file">Upload your image</label>
+          </form>
+        </div>
+
+        <div class="insidetxt">
+          <form id="details">
+            <label>Username</label><br/>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Your username..."
+              value="{{username}}"
+              disabled
+            /><br />
+
+            <label>Description</label><br />
+            <input
+              type="text"
+              id="description"
+              name="description"
+              placeholder="Your description..."
+              value="{{description}}"
+            /><br />
+
+            <label>Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+              value="{{email}}"
+            /><br />
+
+            <label>Current Password</label><br />
+            <input
+              type="password"
+              id="cpass"
+              name="cpass"
+              placeholder="Your current password..."
+            /><br />
+
+            <label>New Password</label><br />
+            <input
+              type="password"
+              id="npass1"
+              name="npass1"
+              placeholder="Your new password..."
+            /><br />
+
+            <label>Confirm Password</label><br />
+            <input
+              type="password"
+              id="npass2"
+              name="npass2"
+              placeholder="Confirm your new password..."
+            /><br />
+          </form>
+          <p id="error"></p>
+          <!--  <button id="add">add preset user</button>-->
+        </div>
+      </header>
+    </main>
+  </body>
+</html>
