@@ -36,7 +36,7 @@ To deploy this project locally,
 ```bash
   Make sure MongoDB is installed and running
 ```
-After installation, run these after downloading the contents of the repository
+After installation, run these in the command prompt of the designated repository folder after downloading the contents of the repository
 ```bash
   1. npm install
   2. node index.js
@@ -51,6 +51,11 @@ To test the web application, proceed to this link to access the web application
 ```
 http://localhost:3000/
 ```
+## To access this program online, please head to this heroku deployment link:
+```
+https://ccapdevmp-esu.herokuapp.com/
+```
+
 
 ## Group Members
 
